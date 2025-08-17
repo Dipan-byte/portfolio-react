@@ -19,7 +19,7 @@ function Navbar() {
     return(
         <header className= { `"navbar" ${ scroll ? "scroll" : " "}` }>
              <div className='navbar'>
-                        
+                        hi
                     </div>
         </header>
        
