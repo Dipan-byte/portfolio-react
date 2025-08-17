@@ -17,7 +17,10 @@ function Navbar() {
         }
     )
     const navlink = [
-        {path:"/" , lable:"HOME"}
+        {path:"/" , lable:"HOME"} ,
+        {path:"/pojects" , lable:"PROJECTS"} ,
+        {path:"/community" , lable:"COMMUNITY"} ,
+        {path:"/contact" , lable:"CONTACTS"}
     ]
 
     
