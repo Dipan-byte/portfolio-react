@@ -16,6 +16,11 @@ function Navbar() {
             return () => window.removeEventListener("scroll" , onscroll ) ;
         }
     )
+    const navlink = [
+        {to}
+    ]
+
+    
     return(
         <header className= { `"navbar" ${ scroll ? "scroll" : " "}` }>
              <div className='navbar'>
