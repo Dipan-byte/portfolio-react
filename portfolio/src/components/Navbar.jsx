@@ -1,5 +1,6 @@
 import {React , useState , useEffect } from 'react'
-import './Navbar.css'
+import './Navbar.css' 
+import {navlink} from 'react-router-dom'
 
 function Navbar() {
     const [scroll ,setscroll] = useState(false)
@@ -27,7 +28,11 @@ function Navbar() {
     return(
         <header className= { `"navbar" ${ scroll ? "scroll" : " "}` }>
              <div className='navbar'>
-                        good mornning
+                        <ul>
+                            {navlink.map((link , index) => 
+                                    <li ></li>
+                            )}
+                        </ul>
                     </div>
         </header>
        
