@@ -17,7 +17,7 @@ function Navbar() {
         }
     )
     const navlink = [
-        {to}
+        {path:"/" , lable:"HOME"}
     ]
 
     
