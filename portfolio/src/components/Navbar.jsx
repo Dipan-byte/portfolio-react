@@ -1,6 +1,6 @@
-import {React , useState , useEffect } from 'react'
+import React , {useState , useEffect } from 'react'
 import './Navbar.css' 
-import {navlink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Navbar() {
     const [scroll ,setscroll] = useState(false)
@@ -17,20 +17,22 @@ function Navbar() {
             return () => window.removeEventListener("scroll" , onscroll ) ;
         }
     )
-    const navlink = [
-        {path:"/" , lable:"HOME"} ,
-        {path:"/pojects" , lable:"PROJECTS"} ,
-        {path:"/community" , lable:"COMMUNITY"} ,
-        {path:"/contact" , lable:"CONTACTS"}
+    const link = [
+        {path:"/" , label:"HOME"} ,
+        {path:"/projects" , label:"PROJECTS"} ,
+        {path:"/community" , label:"COMMUNITY"} ,
+        {path:"/contact" , label:"CONTACTS"}
     ]
 
     
     return(
         <header className= { `"navbar" ${ scroll ? "scroll" : " "}` }>
-             <div className='navbar'>
-                        <ul>
-                            {navlink.map((link , index) => 
-                                    <li ></li>
+             <div className='nav-content'>
+                        <ul className='nav-list'>
+                            {link.map((link , index) => 
+                                    <li key={index}>
+                                        <NavLink to={link.path}>{link.label}</NavLink>
+                                    </li>
                             )}
                         </ul>
                     </div>

@@ -1,6 +1,19 @@
 .navbar{
-    height: 80px;
+    height: 100px;
     width: 100%;
-    background-color: rgb(133, 29, 29);
+    
     margin: 0px;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+    gap: 20px;
+    margin: 0px;
+    
+}
+.nav-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 111, 111);
 }
