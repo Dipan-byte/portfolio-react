@@ -26,7 +26,7 @@ function Navbar() {
 
     
     return(
-        <header className= { `"navbar" ${ scroll ? "scroll" : " "}` }>
+        <header className= { `navbar ${ scroll ? "scroll" : ""}` }>
              <div className='nav-content'>
                         <ul className='nav-list'>
                             {link.map((link , index) => 

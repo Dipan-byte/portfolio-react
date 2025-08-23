@@ -13,12 +13,15 @@ function App() {
   return (
     <BrowserRouter>
             < Navbar/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/community" element={<Community/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-            </Routes>
+            <div className='page'>
+                <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/community" element={<Community/>}/>
+                  <Route path="/contact" element={<Contact/>}/>
+                  <Route path="/projects" element={<Projects/>}/>
+                </Routes>
+            </div>
+            
     </BrowserRouter>
   )
 }
